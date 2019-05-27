@@ -1,0 +1,49 @@
+$main-text-color:  #C4C3C3 !default;
+$dark-text-color: #808087 !default;
+$main-font-family: 'Open Sans', sans-serif !default;
+
+.init {
+    text-align: center;
+    padding-top: 20px;
+}
+.wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border: 1px solid grey;
+    color: $main-text-color;
+    font-family: $main-font-family;
+}
+
+aside {
+    background-color: #4E4B4C;
+    padding: 2em;
+    flex: 1;
+}
+
+main {
+    background-color: #2A2A2F;
+    flex: 3;
+    padding: 2em;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 30px;
+        color: $dark-text-color;
+
+        &:first-child {
+            border-bottom: 3px solid #1B4B66;
+            color: $main-text-color;
+        }
+    }
+}
+
+
+@import 'button';
+

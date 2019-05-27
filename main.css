@@ -1,1 +1,61 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.init {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.wrapper {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  border: 1px solid grey;
+  color: #C4C3C3;
+  font-family: "Open Sans", sans-serif;
+}
+
+aside {
+  background-color: #4E4B4C;
+  padding: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main {
+  background-color: #2A2A2F;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 2em;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+  color: #808087;
+}
+
+nav ul li:first-child {
+  border-bottom: 3px solid #1B4B66;
+  color: #C4C3C3;
+}
+
+button {
+  background-color: transparent;
+  color: #C4C3C3;
+  border: 1px solid #808087;
+  padding: 10px 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=main.css.map */
