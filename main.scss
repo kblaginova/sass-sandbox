@@ -16,6 +16,26 @@ $main-font-family: 'Open Sans', sans-serif !default;
     font-stretch: extra-condensed;
 }
 
+%material-icons {
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    vertical-align: bottom;
+
+}
+
 .init {
     text-align: center;
     padding-top: 20px;
@@ -38,34 +58,12 @@ aside {
     flex: 1;
 }
 
-main {
-    background-color: #2A2A2F;
-    flex: 3;
-    padding: 2em;
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-
-    li {
-        display: inline-block;
-        margin-right: 30px;
-        color: $dark-text-color;
-
-        &:first-child {
-            border-bottom: 3px solid #1B4B66;
-            color: $main-text-color;
-        }
-    }
-}
-
 aside {
     div {
         p {
             @extend %secondary-font;
             font-stretch: condensed;
-            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+            text-shadow: 2px 4px 3px rgba(1,1,1,0.3);
 
             &:last-of-type {
             padding-top: 6em;
@@ -87,5 +85,81 @@ aside {
     }
 }
 
+main {
+    background-color: #2A2A2F;
+    flex: 3;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    border-top: 2px solid $dark-text-color;
+    padding-top: 2em;
+
+    button {
+        &:before {
+            @extend %material-icons;
+            content: 'dashboard';
+        }
+    }
+}
+
+.call-actions button {
+    display: block;
+    width: 180px;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-stretch: condensed;
+
+
+    &:first-of-type {
+        margin-bottom: 2em;
+
+        &:before {
+            @extend %material-icons;
+            content: 'person_add';
+        }
+    }
+
+    &:last-of-type {
+        &:before {
+            @extend %material-icons;
+            content: 'mic_off';
+        }
+    }
+}
+
+.call-participants, .call-actions {
+    >p {
+        font-size: 12px;
+        color: $dark-text-color;
+        font-weight: 800;
+    }
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 30px;
+        color: $dark-text-color;
+
+        &:first-child {
+            border-bottom: 3px solid #1B4B66;
+            color: $main-text-color;
+        }
+    }
+}
+
 @import 'button';
 
+h1 {color: red;}

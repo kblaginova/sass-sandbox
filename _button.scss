@@ -5,4 +5,8 @@ button {
     padding: 10px 25px;
     font-size: 14px;
     letter-spacing: 1px;
+
+    &:hover {
+        background-color: #1B4B66;
+    }
 }
