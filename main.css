@@ -1,0 +1,93 @@
+aside div p {
+  font-size: 14px;
+  font-weight: 100;
+  color: #808087;
+  line-height: 1px;
+}
+
+aside h1, aside h3 {
+  font-weight: 100;
+  font-stretch: extra-condensed;
+}
+
+.init {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.wrapper {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  border: 1px solid grey;
+  color: #C4C3C3;
+  font-family: "Open Sans", sans-serif;
+  border: 3px solid #7E7E7E;
+}
+
+aside {
+  background-color: #4E4B4C;
+  padding: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main {
+  background-color: #2A2A2F;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 2em;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+  color: #808087;
+}
+
+nav ul li:first-child {
+  border-bottom: 3px solid #1B4B66;
+  color: #C4C3C3;
+}
+
+aside div p {
+  font-stretch: condensed;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+aside div p:last-of-type {
+  padding-top: 6em;
+}
+
+aside h1 {
+  font-size: 3em;
+  padding: 1em 0;
+}
+
+aside h3 {
+  font-size: 1.5em;
+  margin: 16px 0;
+}
+
+button {
+  background-color: transparent;
+  color: #C4C3C3;
+  border: 1px solid #808087;
+  padding: 10px 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=main.css.map */
