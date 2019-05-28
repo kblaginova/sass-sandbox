@@ -2,10 +2,23 @@ $main-text-color:  #C4C3C3 !default;
 $dark-text-color: #808087 !default;
 $main-font-family: 'Open Sans', sans-serif !default;
 
+%secondary-font {
+    font-size: 14px;
+    font-weight: 100;
+    color: $dark-text-color;
+    line-height: 1px;
+}
+
+%heading-style {
+    font-weight: 100;
+    font-stretch: extra-condensed;
+}
+
 .init {
     text-align: center;
     padding-top: 20px;
 }
+
 .wrapper {
     width: 1200px;
     display: flex;
@@ -14,6 +27,7 @@ $main-font-family: 'Open Sans', sans-serif !default;
     border: 1px solid grey;
     color: $main-text-color;
     font-family: $main-font-family;
+    border: 3px solid #7E7E7E;
 }
 
 aside {
@@ -44,6 +58,32 @@ nav ul {
     }
 }
 
+aside {
+    div {
+        p {
+            @extend %secondary-font;
+            font-stretch: condensed;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+            &:last-of-type {
+            padding-top: 6em;
+            }
+        }
+    }
+}
+
+aside {
+    h1 {
+        @extend %heading-style;
+        font-size: 3em;
+        padding: 1em 0;
+    }
+    h3 {
+        @extend %heading-style;
+        font-size: 1.5em;
+        margin: 16px 0;
+    }
+}
 
 @import 'button';
 
