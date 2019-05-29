@@ -54,7 +54,6 @@ aside h1, aside h3 {
   text-transform: none;
   white-space: nowrap;
   word-wrap: normal;
-  -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
   margin-right: 5px;
   margin-bottom: 1px;
