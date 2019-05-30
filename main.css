@@ -42,7 +42,7 @@ aside h1, aside h3 {
   font-stretch: extra-condensed;
 }
 
-.bottom button:before, .call-actions button:first-of-type:before, .call-actions button:last-of-type:before {
+.call-actions button:first-of-type:before, .call-actions button:last-of-type:before, .bottom button.btn-layout:before {
   direction: ltr;
   display: inline-block;
   font-family: 'Material Icons';
@@ -134,15 +134,7 @@ main > div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.bottom {
-  border-top: 2px solid #808087;
-  padding-top: 2em;
-}
-
-.bottom button:before {
-  content: 'dashboard';
+  padding-top: 20px;
 }
 
 .call-actions button {
@@ -166,7 +158,6 @@ main > div {
 }
 
 .call-participants {
-  padding-top: 20px;
   height: 500px;
 }
 
@@ -229,6 +220,39 @@ div.p-card p {
 div.p-card p span {
   font-size: 11px;
   color: #808087;
+}
+
+.bottom {
+  border-top: 2px solid #808087;
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom button.btn-layout:before {
+  content: 'dashboard';
+}
+
+.button-group a i {
+  border-radius: 90%;
+  padding: 10px;
+  background-color: #0B76AD;
+  margin: 0 6px;
+}
+
+.button-group a:last-child i {
+  background-color: #DB4445;
 }
 
 button {

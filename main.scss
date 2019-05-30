@@ -96,18 +96,7 @@ main > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.bottom {
-    border-top: 2px solid $dark-text-color;
-    padding-top: 2em;
-
-    button {
-        &:before {
-            @extend %material-icons;
-            content: 'dashboard';
-        }
-    }
+    padding-top: 20px;
 }
 
 .call-actions button {
@@ -136,7 +125,6 @@ main > div {
 }
 
 .call-participants {
-    padding-top: 20px;
     height: 500px;
 }
 
@@ -194,4 +182,35 @@ div.p-card {
         }
 }
 
-@import 'button';
+.bottom {
+    border-top: 2px solid $dark-text-color;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    button.btn-layout {
+        &:before {
+            @extend %material-icons;
+            content: 'dashboard';
+        }
+    }
+}
+
+.button-group a {
+
+    i {
+    border-radius: 90%;
+    padding: 10px;
+    background-color: $blue-color;
+    margin: 0 6px;
+    }
+
+    &:last-child i {
+        background-color: #DB4445;
+    }
+}
+
+
+@import "button";
