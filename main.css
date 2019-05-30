@@ -167,11 +167,6 @@ aside h1, aside h3 {
   vertical-align: bottom;
 }
 
-.init {
-  text-align: center;
-  padding-top: 20px;
-}
-
 .wrapper {
   width: 1000px;
   display: -webkit-box;
@@ -312,11 +307,11 @@ div.p-card div {
 }
 
 div.p-card i {
-  margin-right: 20px;
-  font-size: 20px;
   border-radius: 90%;
   background-color: #0B76AD;
   padding: 10px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
 div.p-card p {
@@ -363,8 +358,8 @@ div.p-card p span {
 
 .button-group a i {
   border-radius: 90%;
-  padding: 10px;
   background-color: #0B76AD;
+  padding: 10px;
   margin: 0 6px;
 }
 

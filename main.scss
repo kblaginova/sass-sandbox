@@ -36,9 +36,10 @@ $main-font-family: 'Open Sans', sans-serif !default;
     vertical-align: bottom;
 }
 
-.init {
-    text-align: center;
-    padding-top: 20px;
+@mixin mat-icons() {
+    border-radius: 90%;
+    background-color: $blue-color;
+    padding: 10px;
 }
 
 .wrapper {
@@ -165,11 +166,9 @@ div.p-card {
     }
 
         i {
+            @include mat-icons();
             margin-right: 20px;
             font-size: 20px;
-            border-radius: 90%;
-            background-color: $blue-color;
-            padding: 10px;
         }
 
         p {
@@ -207,9 +206,7 @@ div.p-card {
 .button-group a {
 
     i {
-    border-radius: 90%;
-    padding: 10px;
-    background-color: $blue-color;
+    @include mat-icons();
     margin: 0 6px;
     }
 
