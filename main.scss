@@ -2,6 +2,7 @@
 
 $main-text-color:  #C4C3C3 !default;
 $dark-text-color: #808087 !default;
+$blue-color: #0B76AD !default;
 $main-font-family: 'Open Sans', sans-serif !default;
 
 %secondary-font {
@@ -40,7 +41,7 @@ $main-font-family: 'Open Sans', sans-serif !default;
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1000px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -74,7 +75,7 @@ aside {
     h1 {
         @extend %heading-style;
         font-size: 3em;
-        padding: 1em 0;
+        padding: 2em 0 1em 0;
     }
     h3 {
         @extend %heading-style;
@@ -86,7 +87,7 @@ aside {
 main {
     background-color: #2A2A2F;
     flex: 3;
-    padding: 4em;
+    padding: 2em 3em;
     display: flex;
     flex-direction: column;
 }
@@ -134,8 +135,14 @@ main > div {
     }
 }
 
-.call-participants, .call-actions {
-    >p {
+.call-participants {
+    padding-top: 20px;
+    height: 500px;
+}
+
+.call-participants,
+.call-actions {
+    > p {
         font-size: 12px;
         color: $dark-text-color;
         font-weight: 800;
@@ -152,10 +159,39 @@ nav ul {
         color: $dark-text-color;
 
         &:first-child {
-            border-bottom: 3px solid #1B4B66;
+            border-bottom: 3px solid $blue-color;
             color: $main-text-color;
         }
     }
+}
+
+div.p-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    div {
+        align-self: center;
+        margin: 10px 0;
+    }
+
+        i {
+            margin-right: 20px;
+            font-size: 20px;
+            border-radius: 90%;
+            background-color: $blue-color;
+            padding: 10px;
+        }
+
+        p {
+            margin: 2px;
+            font-size: 14px;
+
+            span {
+                font-size: 11px;
+                color: $dark-text-color;
+            }
+        }
 }
 
 @import 'button';

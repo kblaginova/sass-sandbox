@@ -66,7 +66,7 @@ aside h1, aside h3 {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +100,7 @@ aside div p:last-of-type {
 
 aside h1 {
   font-size: 3em;
-  padding: 1em 0;
+  padding: 2em 0 1em 0;
 }
 
 aside h3 {
@@ -113,7 +113,7 @@ main {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  padding: 4em;
+  padding: 2em 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +165,13 @@ main > div {
   content: 'mic_off';
 }
 
-.call-participants > p, .call-actions > p {
+.call-participants {
+  padding-top: 20px;
+  height: 500px;
+}
+
+.call-participants > p,
+.call-actions > p {
   font-size: 12px;
   color: #808087;
   font-weight: 800;
@@ -183,8 +189,46 @@ nav ul li {
 }
 
 nav ul li:first-child {
-  border-bottom: 3px solid #1B4B66;
+  border-bottom: 3px solid #0B76AD;
   color: #C4C3C3;
+}
+
+div.p-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.p-card div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10px 0;
+}
+
+div.p-card i {
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 90%;
+  background-color: #0B76AD;
+  padding: 10px;
+}
+
+div.p-card p {
+  margin: 2px;
+  font-size: 14px;
+}
+
+div.p-card p span {
+  font-size: 11px;
+  color: #808087;
 }
 
 button {
@@ -197,6 +241,6 @@ button {
 }
 
 button:hover {
-  background-color: #1B4B66;
+  background-color: #0B76AD;
 }
 /*# sourceMappingURL=main.css.map */
