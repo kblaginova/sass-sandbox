@@ -17,8 +17,6 @@
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
 }
 
 .mi-3d-rotation:before {
@@ -3748,4 +3746,3 @@
 .mi-zoom-out-map:before {
   content: "\e56b";
 }
-/*# sourceMappingURL=material-icons.css.map */
