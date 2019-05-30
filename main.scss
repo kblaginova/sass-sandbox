@@ -1,4 +1,5 @@
 @import 'material-icons/iconfont/material-icons.scss';
+@import 'volume-slider';
 
 $main-text-color:  #C4C3C3 !default;
 $dark-text-color: #808087 !default;
@@ -195,6 +196,11 @@ div.p-card {
             @extend %material-icons;
             content: 'dashboard';
         }
+    }
+
+    .volume {
+        display: flex;
+        flex-direction: row;
     }
 }
 
